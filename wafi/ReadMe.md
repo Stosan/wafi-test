@@ -21,6 +21,43 @@ Time Limit: 45 minutes
 ```
 go run .
 ```
+#### Features
+##### Create Account
+
+This feature requires two account to demonstrate the app and takes in the following fields:
+
+Field definition
+ - 'firstname' user first name or initials
+ - 'last name' user last name or surname
+ - 'mobile number' user mobile number without the leading 0 e.g. 08093111111 should be 8093111111
+ - 'initial depost' user must make an initial deposit above $10
+ if successful the response should be:
+ ```
+ 
+ ```
+ 
+ ##### Check Account Balance
+
+This feature requires an account owner to check their balance in accounts using in the following field:
+
+Field definition
+ - 'mobile number' user mobile number without the leading 0 e.g. 08093111111 should be 8093111111
+ if successful the response should be:
+ ```
+ 
+ ```
+ 
+  ##### Check Account Balance
+
+This feature requires an account owner to transfer from their balance to another account using in the following field:
+
+Field definition
+ - 'mobile number' user mobile number without the leading 0 e.g. 08093111111 should be 8093111111
+ if successful the response should be:
+ ```
+ 
+ ```
+ 
 2. To run test
 
 ```
