@@ -32,7 +32,7 @@ Select an option
 ```
 #### Features
 ##### Create Account
-<b>if 1 is inputted</b>
+<b>if 1 is inputted</b><br>
 This feature requires two account to demonstrate the app and takes in the following fields:
 
 Field definition
@@ -50,25 +50,26 @@ Field definition
  ```
  
  ##### Check Account Balance
-<b>if 2 is inputted</b>
+<b>if 2 is inputted</b><br>
 This feature requires an account owner to check their balance in accounts using in the following field:
 
 Field definition
  - 'mobile number' user mobile number without the leading 0 e.g. 08093111111 should be 8093111111
  if successful the response should be:
  ```
- your account balance is: $10
+ your account balance is: $20
  ```
  
   ##### Transfer from Account Balance
-<b>if 3 is inputted</b>
+<b>if 3 is inputted</b><br>
 This feature requires an account owner to transfer from their balance to another account using in the following field:
 
 Field definition
  - 'mobile number' user mobile number without the leading 0 e.g. 08093111111 should be 8093111111
  if successful the response should be:
  ```
- 
+ - Transfer successful!
+ - your balance $5
  ```
  
 2. To run test
