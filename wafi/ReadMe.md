@@ -3,15 +3,15 @@ For this problem we want to write a small piece of the backend for a peer to pee
 
 ## Project Description
 Example Run through of the app:
-User A is added to the app
-User A deposits 10 dollars
-User B is added to the app
-User B deposits 20 dollars
-User B sends 15 dollars to User A
-User A checks their balance and has 25 dollars
-User B checks their balance and has 5 dollars
-User A transfers 25 dollars from their account
-User A checks their balance and has 0 dollars
+- User A is added to the app
+- User A deposits 10 dollars
+- User B is added to the app
+- User B deposits 20 dollars
+- User B sends 15 dollars to User A
+- User A checks their balance and has 25 dollars
+- User B checks their balance and has 5 dollars
+- User A transfers 25 dollars from their account
+- User A checks their balance and has 0 dollars
 
 Time Limit: 45 minutes
 
@@ -21,9 +21,18 @@ Time Limit: 45 minutes
 ```
 go run .
 ```
+on start up, the app should display a menu as such:
+```
+ **********MENU**********
+Select an option
+1. Create an account
+2. Check balance
+3. Transfer
+************************
+```
 #### Features
 ##### Create Account
-
+<b>if 1 is inputted</b>
 This feature requires two account to demonstrate the app and takes in the following fields:
 
 Field definition
@@ -33,22 +42,26 @@ Field definition
  - 'initial depost' user must make an initial deposit above $10
  if successful the response should be:
  ```
- 
+ Thank you for creating an account, your account details are: 
+ - first name: sam 
+ - last name: ayo 
+ - mobile number: 111 
+ - account balance 10 
  ```
  
  ##### Check Account Balance
-
+<b>if 2 is inputted</b>
 This feature requires an account owner to check their balance in accounts using in the following field:
 
 Field definition
  - 'mobile number' user mobile number without the leading 0 e.g. 08093111111 should be 8093111111
  if successful the response should be:
  ```
- 
+ your account balance is: $10
  ```
  
-  ##### Check Account Balance
-
+  ##### Transfer from Account Balance
+<b>if 3 is inputted</b>
 This feature requires an account owner to transfer from their balance to another account using in the following field:
 
 Field definition
