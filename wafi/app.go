@@ -129,7 +129,7 @@ func TransferAmount(mobile uint){
 		if mobile == user["mobile"]{
 			useraccountbalance := utils.InterfaceToUint( user["accountbalance"])
 			if useraccountbalance != 0{
-				otherUser := NewUser[1]
+				otherUser := NewUser[0]
 				otherUserName:= otherUser["firstName"]
 				fmt.Printf( "enter an amount to transfer to %v\n",otherUserName)
 				fmt.Scan(&amounttoTransfer)
@@ -138,7 +138,7 @@ func TransferAmount(mobile uint){
 					useraccountbalance := utils.InterfaceToUint( otherUser["accountbalance"]) + amounttoTransfer
 					otherUser["accountbalance"] = useraccountbalance
 					fmt.Println("Transfer successful!")
-					fmt.Printf("your balance %v",user["accountbalance"])
+					fmt.Printf("your balance $%v",user["accountbalance"])
 				}
 				
 			}
